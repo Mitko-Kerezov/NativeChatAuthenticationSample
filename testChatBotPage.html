@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="h-100">
+  <head>
+
+  </head>
+
+  <body class="h-100">
+    <script src="https://web-chat.nativechat.com/2.2.0/sdk/nativechat.js"></script>
+    <link href="https://web-chat.nativechat.com/2.2.0/sdk/nativechat.css" rel="stylesheet" type="text/css">
+    <script>
+  var chatSettings = {
+    bot: {
+      id: "55de350e93104cc5b0bf6b07"
+    },
+    channel: {
+      id: "9e4fcb39-c444-4c50-ab90-afe0da4c98b6",
+      token: "13065c77-a676-43a6-8d7f-87fa2e5da6fa"
+    },
+    session: {
+      clear: true
+    },
+    user: {
+      name: 'You'
+    }
+  };
+
+  window.NativeChat.load({
+    id: "kcChatWindow",
+    origin: "",
+    display: {
+        mode: "modal"
+    },
+    chat: chatSettings
+  });
+</script>
+  </body>
+</html>
