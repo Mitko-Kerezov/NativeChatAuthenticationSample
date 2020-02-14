@@ -22,10 +22,7 @@
             <div id="content-home" class="page">
                 <div class="text-center hero">
                     <h1 class="mb-4">Test Login Page</h1>
-                    <h2><button id="qsLoginBtn" onclick="login()"
-                            class="btn btn-primary btn-margin auth-invisible hidden">
-                            Log in
-                        </button></h2>
+                    <h2 id="login-button-container">Loading login button...</h2>
                 </div>
             </div>
         </div>
@@ -77,6 +74,9 @@
                 domain: config.domain,
                 client_id: config.clientId
             });
+
+            // Create the login button
+            document.getElementById("login-button-container").innerHTML = '<button id="qsLoginBtn" onclick="login()" class="btn btn-primary btn-margin auth-invisible hidden">Log in</button>';
         };
 
         // Will run when page finishes loading
